@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Alarm clock</title>
+</head>
+<body>
+    <div id="clock">
+        <h1>Current time</h1>
+        <div id="current-time">fgafdagfd</div>
+    </div>
+
+    <!--Form to set alarm-->
+    <div class="set-alarm">
+        <div>Set Alarm</div>
+        <div class"form-actions">
+            <form>
+                <div class="alarm-inputs">
+                    <input type="number"
+                           name="hour"
+                           placeholder="Enter Hours"
+                           min="0"
+                           max="12"
+                           required />
+                    <input type="number"
+                           name="min"
+                           min="0"
+                           max="60"
+                           placeholder="Enter minutes"
+                           required />
+                    <select name="AM/PM" required>
+                        <option value="" selected disabled>AM/PM</option>
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--Active alarm status-->
+    <div id="active-alarm">
+        <div id="alarm-text"></div>
+    </div>
+
+    <!--Alarm sound-->
+    <audio id="alarm-audio"></audio>
+
+    <!--Reset Alarm-->
+    <div id="active-alarm">
+        <div id="alarm-text"></div>
+        <button id="clear-alarm">Clear Alarm</button>
+    </div>
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
